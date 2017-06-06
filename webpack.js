@@ -24,6 +24,9 @@ module.exports = {
           use: {
             // Using BABEl for transpiling
             loader: 'babel-loader',
+            options: {
+              presets: ['env']
+            }
           }
         },
         {
