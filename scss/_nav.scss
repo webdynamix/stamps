@@ -1,0 +1,72 @@
+/*
+ * Using bootstraps navbar but  with a custom setup
+ * @extend lets me inherit properties from another selector
+    !* I'm avoiding assigning bootstrap's class names directly on
+    the elemens and instead I'm inheriting those properties by using
+    @extend.
+
+*/
+nav#navbar {
+  border: 0;
+  .header {
+    @extend .navbar-header;
+    > a:first-child {
+      display: inline-block;
+      padding: 6px $liningSpace 0 0;
+    }
+    > button {
+      cursor: pointer;
+      @extend .navbar-toggle;
+      span {
+        @extend .icon-bar;
+      }
+    }
+  }
+  #navCollapse {
+    > ul {
+      @extend .nav, .navbar-nav;
+      > li {
+        > a {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  @extend .navbar, .navbar-inverse;
+}
+
+/*
+ * On mobile screens the menu be collapsible
+ * transition for animating menu height
+*/
+@media (max-width: $screen-sm-max) {
+  nav#navbar {
+    #navCollapse {
+      position: absolute;
+      z-index: 999;
+      overflow: hidden;
+      transition: all .8s linear;
+      max-height: 0;
+      height: 0;
+      background: $blue;
+      left: -$liningSpace;
+      right: -$liningSpace;
+      &.expanded {
+        max-height: 500px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  nav#navbar {
+      float: left;
+      .navbar-collapse {
+        float: left;
+      }
+  }
+  .navbar-inverse {
+    border-color: transparent;
+  }
+}

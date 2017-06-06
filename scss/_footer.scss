@@ -1,0 +1,30 @@
+footer {
+  > .layout {
+    @extend .row;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    > section {
+      text-align: center;
+      @extend .col-md-4;
+      h3 {
+        color: $pink;
+        margin: 13px 0;
+      }
+      ul {
+        margin: 13px 0 27px;
+        li {
+          font-size: $smallfont;
+          a {
+            color: $white;
+            line-height: 31px;
+            text-decoration: none;
+            &:hover {
+              color: $pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}

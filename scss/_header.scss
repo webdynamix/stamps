@@ -1,0 +1,18 @@
+header {
+  color: $white;
+  background-color: $blue;
+  height: $headerHeight;
+  @extend .navbar-fixed-top;
+  nav {
+    ul {
+      li {
+        a {
+          @include headerText;
+          &:hover {
+            color: $pink;
+          }
+        }
+      }
+    }
+  }
+}

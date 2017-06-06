@@ -1,0 +1,23 @@
+#products {
+  margin-top: calc(53px - #{$liningSpace*2});
+  @extend .row;
+  li {
+    text-align: center;
+    margin: $liningSpace*2 0;
+    @extend .col-md-3, .col-sm-6;
+    > h4 {
+      margin: 36px 0 4px;
+    }
+    > span {
+      display: block;
+      color: $pink;
+      font-weight: bold;
+    }
+    > .selectbox {
+      @include selectbox(75.6px);
+    }
+    img {
+     max-width: 100%;
+    }
+  }
+}

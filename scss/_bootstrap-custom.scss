@@ -1,0 +1,24 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+
+ ** Making sure I only import what I need and not the full library.
+ ** Only these imports will make it to the css bundle
+ */
+
+// making sure I have acces to my defined colors
+ @import "colors";
+
+ $bootstrap-sass-asset-helper: true;
+ $navbar-inverse-color: $white;
+ $navbar-inverse-link-color: $white;
+ $navbar-inverse-link-hover-color: $pink;
+ $navbar-inverse-bg: $blue;
+
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/forms";
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/navbar";

@@ -1,0 +1,53 @@
+#cart {
+  position: relative;
+  float: right;
+  &.active {
+    > li:last-child {
+      background: $pink;
+    }
+  }
+  > li {
+    vertical-align: top;
+    @include headerText;
+    &:first-child {
+      @extend .hidden-xs;
+    }
+    .amount {
+      position: relative;
+      padding-right: 5px;
+      min-width: 45px;
+      display: inline-block;
+      &:after {
+        @include inlineDivider;
+      }
+    }
+    &:last-child {
+      position: relative;
+      width: 50px;
+      img {
+        width: 32px;
+        height: 30px;
+        position: absolute;
+        top: 13px;
+        left: 6px;
+      }
+      .count {
+        font-size: $smallfont;
+        color: $blue;
+        position: relative;
+        line-height: 23px;
+        display: block;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  #cart {
+    position: absolute;
+    top: 0;
+    right: 85px;
+  }
+}
