@@ -8,7 +8,7 @@ No need to install. This is a working project. If you want to install, instructi
 Must have node installed. Run the following in project directory to download node modules(package.json).
 
 ```
-npm i
+npm install
 ```
 
 ## Usage
