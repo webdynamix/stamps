@@ -1,6 +1,6 @@
 # Stamps.com code test
 
-Compiled bundle is inside the included `dist/`` directory. Just open index.html. 
+Compiled bundle is inside the included `dist/` directory. Just open index.html. 
 No need to install. This is a working project. If you want to install, instructions are below.
 
 ## Installation
