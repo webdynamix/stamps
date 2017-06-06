@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <title>Stapms.com</title>
+    <!-- controls zoom level on mobile screens to use media queries  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- compiled css bundle  -->
+    <link rel="stylesheet" href="dist/main.bundle.css" />
+    <!-- compiled js bundle  -->
+    <script src="dist/bundle.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <!-- .layout auto aligns content on desktop  -->
+      <div class="layout">
+        <nav id="navbar">
+          <div class="header navbar-header">
+            <a href="#">
+              <img src="images/logo.png" srcset="images/logo@2x.png 2x, images/logo@3x.png 3x" alt="" />
+            </a>
+            <button id="navCollapsebtn" type="button" data-toggle="collapse">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+          </div>
+          <div id="navCollapse" class="navbar-collapse">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Occasions</a></li>
+              <li><a href="">Order</a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul id="cart">
+          <li>Total Amount:</li>
+          <li>
+            $
+            <span class="amount">0.00</span>
+          </li>
+          <li>
+            <img src="images/cart.png" srcset="images/cart@2x.png 2x, images/cart@3x.png 3x" alt="" />
+            <span class="count">0</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+        <div class="layout">
+      		<h1>Top Products</h1>
+          <p>To add desired products to the cart, simply drag a product image to the cart icon found at the top right of the page.</p>
+      		<ul  id="products">
+            <!-- assigning price in dataset to be retrieved later  -->
+      			<li id="p-1" data-price="30.00">
+              <img src="products/images/flower-1.png"
+                  srcset="products/images/flower-1@2x.png 2x,
+                 products/images/flower-1@3x.png 3x"
+                 alt=""
+                 />
+              <h4>Sunflower Melody</h4>
+              <span>$30.00</span>
+              <div class="selectbox">
+                <!-- empy select will be populated in JS  -->
+                <select></select>
+              </div>
+            </li>
+            <li id="p-2" data-price="35.00">
+              <img src="products/images/flower-2.png"
+                  srcset="products/images/flower-2@2x.png 2x,
+                 products/images/flower-2@3x.png 3x"
+                 alt=""
+                 />
+             <h4>Spring Mix</h4>
+             <span>$35.00</span>
+             <div class="selectbox">
+               <select></select>
+             </div>
+            </li>
+            <li id="p-3" data-price="35.00">
+              <img src="products/images/flower-3.png"
+                  srcset="products/images/flower-3@2x.png 2x,
+                 products/images/flower-3@3x.png 3x"
+                 alt=""
+                 />
+             <h4>Colorful Arrangement</h4>
+             <span>$40.00</span>
+             <div class="selectbox">
+               <select></select>
+             </div>
+            </li>
+            <li id="p-4" data-price="35.00">
+              <img src="products/images/flower-4.png"
+                  srcset="products/images/flower-4@2x.png 2x,
+                 products/images/flower-4@3x.png 3x"
+                 alt=""
+                 />
+             <h4>Tulip Season</h4>
+             <span>$50.00</span>
+             <div class="selectbox">
+               <select></select>
+             </div>
+            </li>
+
+      		</ul>
+        </div>
+    </main>
+    <footer>
+      <div class="layout">
+        <section>
+          <h3>GET TO KNOW US</h3>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Media</a></li>
+            <li><a href="">Security &amp; Privacy</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>LEARN MORE ABOUT</h3>
+          <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Find a Florist</a></li>
+            <li><a href="">Floral Tips &amp; Inspiration</a></li>
+            <li><a href="">Sitemap</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>SHOP VICKY'S</h3>
+          <ul>
+            <li><a href="">Same-Day Flower Delivery</a></li>
+            <li><a href="">Birthday Flowers</a></li>
+            <li><a href="">Funeral &amp; Sympathy Flowers</a></li>
+            <li><a href="">International Flower Delivery</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
