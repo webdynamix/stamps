@@ -1,7 +1,7 @@
 {
-  "name": "stamps.com",
+  "name": "DnD Shopping cart",
   "version": "1.0.0",
-  "description": "Stamps.com shopping cart code challenge",
+  "description": "Shopping cart example using HTML5 DnD and ES6",
   "scripts": {
     "build": "webpack"
   },
