@@ -1,4 +1,6 @@
-# Stamps.com code test
+# HTML5 DnD shopping cart
+
+Sample product DnD shopping cart project built in HTML5/SASS/ES6 and bundled using webpack.
 
 Compiled bundle is inside the included `dist/` directory. Just open index.html. 
 No need to install. This is a working project. If you want to install, instructions are below.
