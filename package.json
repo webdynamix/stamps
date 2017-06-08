@@ -1,10 +1,9 @@
 {
-  "name": "DnD Shopping cart",
+  "name": "stamps",
   "version": "1.0.0",
-  "description": "Shopping cart example using HTML5 DnD and ES6",
-  "scripts": {
-    "build": "webpack"
-  },
+  "description": "DnD example",
+  "main": "webpack.js",
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -20,5 +19,17 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.6.1"
   },
-  "dependencies": {}
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdynamix/stamps.git"
+  },
+  "author": "Valenting @webdynamix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdynamix/stamps/issues"
+  },
+  "homepage": "https://github.com/webdynamix/stamps#readme"
 }
