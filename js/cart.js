@@ -56,6 +56,7 @@ export default class Cart {
   }
 
   resetOption(item) {
+    // console.log('resetOption');
     let option;
     const select = item.querySelector('select');
     const random = getRandom(1, 20);
@@ -72,7 +73,6 @@ export default class Cart {
   }
 
   onDrop(event) {
-    preventBubbling(event);
     // Retrieve product id assigned
     const id = event.dataTransfer.getData("Id");
     const item = document.getElementById(id);
@@ -82,6 +82,7 @@ export default class Cart {
 
     this.resetOption(item);
     this.cart.classList.remove('active');
+    preventBubbling(event);
     return false;
   }
 

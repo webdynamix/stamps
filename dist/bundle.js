@@ -257,6 +257,7 @@ var Cart = function () {
   }, {
     key: 'resetOption',
     value: function resetOption(item) {
+      // console.log('resetOption');
       var option = void 0;
       var select = item.querySelector('select');
       var random = (0, _helpers.getRandom)(1, 20);
@@ -274,7 +275,6 @@ var Cart = function () {
   }, {
     key: 'onDrop',
     value: function onDrop(event) {
-      (0, _helpers.preventBubbling)(event);
       // Retrieve product id assigned
       var id = event.dataTransfer.getData("Id");
       var item = document.getElementById(id);
@@ -284,6 +284,7 @@ var Cart = function () {
 
       this.resetOption(item);
       this.cart.classList.remove('active');
+      (0, _helpers.preventBubbling)(event);
       return false;
     }
   }, {
