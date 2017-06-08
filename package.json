@@ -1,5 +1,5 @@
 {
-  "name": "stamps",
+  "name": "DND_example",
   "version": "1.0.0",
   "description": "DnD example",
   "main": "webpack.js",
